@@ -1,0 +1,313 @@
+:root {
+  --topbar: #071b2e;
+  --primary: #8b5cf6;
+  --primary-soft: #f4eeff;
+  --page-bg: #f5f7fa;
+  --panel-bg: #ffffff;
+  --table-head: #f6f7fb;
+  --title: #1f2933;
+  --text: #3f4a56;
+  --muted: #8a94a6;
+  --line: #e8ecf2;
+  --success: #26c6a1;
+  --warning: #ff7a45;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--text);
+  font-family: "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", Arial, sans-serif;
+}
+
+.admin-shell {
+  min-height: 100vh;
+  background: var(--page-bg);
+}
+
+.topbar {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  padding: 0 16px;
+  background: var(--topbar);
+  color: #fff;
+}
+
+.store-brand {
+  display: flex;
+  width: 204px;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.store-logo {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--topbar);
+  font-size: 10px;
+}
+
+.top-nav {
+  display: flex;
+  gap: 42px;
+  height: 48px;
+  align-items: center;
+}
+
+.top-nav a {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 14px;
+}
+
+.top-nav .active {
+  color: #fff;
+  font-weight: 600;
+}
+
+.top-actions {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 20px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.store-switch {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sidebar {
+  min-height: calc(100vh - 48px);
+  border-right: 1px solid var(--line);
+  background: #fff !important;
+}
+
+.sidebar h2 {
+  margin: 0;
+  padding: 16px 12px;
+  color: var(--title);
+  font-size: 16px;
+}
+
+.sidebar .ant-menu {
+  border-inline-end: 0 !important;
+}
+
+.sidebar .ant-menu-item-selected {
+  background: var(--primary-soft) !important;
+  color: var(--primary) !important;
+}
+
+.content {
+  min-width: 1200px;
+  padding: 16px;
+  overflow: auto;
+}
+
+.page-head {
+  margin-bottom: 16px;
+}
+
+.page-head h1 {
+  margin: 12px 0 0;
+  color: var(--title);
+  font-size: 18px;
+}
+
+.panel {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: var(--panel-bg);
+}
+
+.section-title {
+  margin-bottom: 14px;
+  color: var(--title);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.section-title span {
+  margin-left: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-grid,
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.metric-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.todo-card .ant-card-body,
+.metric-card .ant-card-body {
+  display: flex;
+  min-height: 86px;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.todo-card span,
+.metric-card span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.todo-card strong,
+.metric-card strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--title);
+  font-size: 24px;
+}
+
+.todo-icon,
+.metric-icon {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.purple .todo-icon {
+  background: var(--primary);
+}
+
+.amber .todo-icon,
+.yellow {
+  background: #ffb020;
+}
+
+.teal .todo-icon {
+  background: var(--success);
+}
+
+.red .todo-icon {
+  background: #ff4d4f;
+}
+
+.blue {
+  background: #4f8cff;
+}
+
+.pink {
+  background: #ff6fae;
+}
+
+.metric-main {
+  min-width: 120px;
+}
+
+.metric-note {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.order-tabs {
+  margin-top: -8px;
+}
+
+.filter-form {
+  margin-bottom: 14px;
+  padding: 14px 16px;
+  background: var(--table-head);
+}
+
+.filter-form .ant-form-item {
+  margin-bottom: 10px;
+}
+
+.filter-form .ant-input,
+.filter-form .ant-select-selector {
+  height: 32px !important;
+}
+
+.filter-form .ant-btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.order-table .ant-table-thead > tr > th {
+  background: var(--table-head);
+  color: var(--title);
+  font-size: 12px;
+}
+
+.goods-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.goods-cell img {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--line);
+  object-fit: cover;
+}
+
+.goods-cell strong {
+  display: block;
+  max-width: 300px;
+  overflow: hidden;
+  color: var(--title);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.goods-cell span,
+.amount-cell span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.amount-cell {
+  text-align: right;
+}
+
+.amount-cell strong {
+  color: var(--title);
+}
+
+.order-table a {
+  color: var(--primary);
+}
