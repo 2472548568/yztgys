@@ -1,0 +1,5 @@
+interface:
+  display_name: "diagram-generator｜图表生成"
+  short_description: "生成流程图、架构图、时序图、泳道图、ER图、UML图、组织架构图和 BPMN。"
+policy:
+  allow_implicit_invocation: true

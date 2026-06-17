@@ -1,0 +1,55 @@
+{
+  "baseUrl": "https://assets.example.com/mock-assets/",
+  "version": "1.0.0",
+  "categories": {
+    "products": {
+      "name": "商品图片",
+      "items": [
+        "products/product-001.jpg",
+        "products/product-002.jpg"
+      ]
+    },
+    "avatars": {
+      "name": "头像图片",
+      "items": [
+        "avatars/avatar-001.png"
+      ]
+    },
+    "banners": {
+      "name": "横幅图片",
+      "items": [
+        "banners/banner-001.jpg"
+      ]
+    },
+    "receipts": {
+      "name": "单据票据",
+      "items": [
+        "receipts/receipt-001.jpg"
+      ]
+    },
+    "stores": {
+      "name": "门店现场",
+      "items": [
+        "stores/store-001.jpg"
+      ]
+    },
+    "uploads": {
+      "name": "上传预览",
+      "items": [
+        "uploads/upload-001.jpg"
+      ]
+    },
+    "empty": {
+      "name": "空状态图",
+      "items": [
+        "empty/empty-list.png"
+      ]
+    },
+    "icons": {
+      "name": "业务图标",
+      "items": [
+        "icons/icon-order.png"
+      ]
+    }
+  }
+}

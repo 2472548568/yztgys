@@ -1,0 +1,7 @@
+{
+  "markdown.preview.breaks": true,
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "files.exclude": {
+    "**/.DS_Store": true
+  }
+}

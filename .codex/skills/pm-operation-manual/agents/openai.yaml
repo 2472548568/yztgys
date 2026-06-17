@@ -1,0 +1,5 @@
+interface:
+  display_name: "pm-operation-manual｜操作手册"
+  short_description: "生成操作手册、用户手册、使用说明、功能说明文档和快速入门指南。"
+policy:
+  allow_implicit_invocation: true
